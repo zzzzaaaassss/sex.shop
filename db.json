@@ -1,5 +1,13 @@
 { 
   "user": [
+  {
+    "id": 2,
+    "name": "Vlad",
+    "surname": "Lobov",
+    "balanse": 15000
+  },
+  {
     
+  }  
   ]
 }
