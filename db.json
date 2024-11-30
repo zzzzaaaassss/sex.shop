@@ -1,0 +1,37 @@
+{ 
+  "user": [
+  {
+    "id": 2,
+    "name": "Vlad",
+    "surname": "Lobov",
+    "balanse": 15000
+  },
+  {
+    "id": 1,
+    "name": "gleb",
+    "surname": "troxan",
+    "balanse": 15
+  },
+  {
+    "id": 3,
+    "name": "potato",
+    "prise": 13
+  },
+  {
+    "id": 4,
+    "name": "apelsin",
+    "prise": 33
+  },
+  {
+    "id": 5,
+    "name": "dildo zmei gorunuch",
+    "prise": 250
+  },
+  {
+    "id": 6,
+    "name": "samolet",
+    "prise": 900
+  }
+  ]
+}
+
