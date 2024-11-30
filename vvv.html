@@ -1,1 +1,222 @@
-vvv
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>секс шоп</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #2E1B47;
+      color: #D1F5A1;
+      flex-direction: column;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin-bottom: 50px;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .card {
+      width: 250px;
+      height: 350px;
+      background-color: #3B1F5A;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+      opacity: 0;
+      animation: cardIn 1s ease-out forwards;
+    }
+
+    @keyframes cardIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .price {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      font-weight: bold;
+      color: #D1F5A1;
+      background-color: rgba(59, 31, 90, 0.8);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .card .title {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      font-weight: bold;
+      color: #D1F5A1;
+      background-color: rgba(59, 31, 90, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .form-container {
+      background-color: #3B1F5A;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      bottom: 0;
+      animation: formIn 1s ease-out forwards;
+    }
+
+    @keyframes formIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #2E1B47;
+      border: 1px solid #D1F5A1;
+      color: #D1F5A1;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container input:focus {
+      background-color: #3B1F5A;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #D1F5A1;
+      border: none;
+      color: #3B1F5A;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background-color: #A4F1A1;
+    }
+
+    h2 {
+      color: #D1F5A1;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">самолёт</div>
+      <div class="price">1000$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">хз самалёт</div>
+      <div class="price">2000$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">самолёт 2</div>
+      <div class="price">1500$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">самолёт 3</div>
+      <div class="price">3000$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">самолёт 4</div>
+      <div class="price">1200$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">самолёт 5</div>
+      <div class="price">1800$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">самолёт 6</div>
+      <div class="price">2500$</div>
+    </div>
+    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/VQ-BEI_%286919052100%29.jpg/1200px-VQ-BEI_%286919052100%29.jpg');">
+      <div class="title">мне лень</div>
+      <div class="price">2200$</div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>Регистрация</h2>
+    <form>
+      <input type="text" id="name" placeholder="Введите имя" required><br>
+      <input type="email" id="email" placeholder="Введите Email" required><br>
+      <input type="password" id="password" placeholder="Введите пароль" required><br>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (name && email && password) {
+        alert('Регистрация успешна!');
+      } else {
+        alert('Пожалуйста, заполните все поля.');
+      }
+    });
+  </script>
+
+</body>
+</html>
