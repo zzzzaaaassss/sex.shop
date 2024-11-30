@@ -1,1 +1,18 @@
-zzz
+body {
+	background-color:#b8b6b6;
+	font-size: 35px;
+	padding: 15px;
+}
+
+a {
+    padding: 15px;    
+}
+.class {
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo {
+	width: 250px;
+	height: 125px;
+}
